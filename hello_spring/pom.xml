@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.0</version> <!-- 버전 확인 가능 -->
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>kr.ac.inha</groupId>
+	<artifactId>hello_spring</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>hello_spring</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+	<!-- 라이브러리를 관리하는 Maven을 지정하는 시작코드
+	총지정은 3개이지만 dependency 로 인해 훨씬 많은 파일들이 있음 -->
+	<!-- MVN repositary 에서 검색 가능 
+	버전 선택 후 dependency 태그 부분을 붙여넣기 하면 추가 가능 -->
+	<!-- Dependency Hierarchy 에서 확인 가능 -->
+	<dependencies>
+		<dependency> <!-- 지정1 -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId> 
+		</dependency>
+
+		<dependency> <!-- 지정2 -->
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId> 
+			<scope>runtime</scope>
+		</dependency>
+		<dependency> <!-- 지정3 -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId> 
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<!-- 라이브러리를 관리하는 Maven을 지정하는 종료코드 -->
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
