@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 // 어노테이션 사용 (1)
 @RestController // Spring Project 에서 RestController 역할을 하도록 지정 (파일 import)
 
-public class BoardController {
+public class BoardController { // 사용자가 요청한 부분을 처리하는 프로그램
 	
 	// 어노테이션 사용 (2)
 	@RequestMapping("/hello1") // /hello 라는 주소갑 입력을 통한 요청을 받으면 hello() 실행
